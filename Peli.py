@@ -8,7 +8,7 @@ Yhdiste = mysql.connector.connect(
     port=3306,
     database="flight_game",
     user="root",
-    password="Rehman087565426.",
+    password="7523.",
     autocommit=True
 )
 # Valitsee 15 satunaista lentokentää suomesta ja lajitelee ne aakkos-järjestyksessä
