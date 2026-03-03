@@ -6,10 +6,15 @@
 def haalarimerkki():
     print("Haalarimerkki löydetty!")
 
+haalarimerkki()
 
-def haalarimerkki_määrä(maara):
+
+#Kysytään käyttäjältä kuinka monta haalarimerkki on löydetty?
+def haalarimerkki_määrä():
+    maara = input("Kuinka paljon Haalarimerkki on löydetty?:")
     print("Haalarimerkkiä on löydetty:", maara)
 
+haalarimerkki_määrä()
 
 
 
