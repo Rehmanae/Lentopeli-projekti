@@ -8,10 +8,16 @@ def haalarimerkki():
 
 haalarimerkki()
 
+haalarimerkki=[]
+
 
 #Kysytään käyttäjältä kuinka monta haalarimerkki on löydetty?
 def haalarimerkki_määrä():
     maara = input("Kuinka paljon Haalarimerkki on löydetty?:")
+    haalarimerkki.append(maara)
+    return haalarimerkki
+
+while True:
     print("Haalarimerkkiä on löydetty:", maara)
 
 haalarimerkki_määrä()
