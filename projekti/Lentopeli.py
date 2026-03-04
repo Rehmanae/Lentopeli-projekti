@@ -1,7 +1,6 @@
 import random
 
 import mysql.connector
-
 # Muodostaa yhdistyksen tietokantoihin
 Yhdiste = mysql.connector.connect(
     host="localhost",
