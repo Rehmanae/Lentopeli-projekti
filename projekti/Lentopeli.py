@@ -8,7 +8,7 @@ Yhdiste = mysql.connector.connect(
     port=3306,
     database="flight_game",# Why do I call it demo it is the real one?
     user="root",
-    password="Rehman087565426.",
+    password="7523",
     autocommit=True,
 )
 # Valitsee 15 satunaista lentokentää suomesta ja lajitelee ne aakkos-järjestyksessä
