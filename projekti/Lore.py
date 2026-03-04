@@ -6,9 +6,10 @@ import mysql.connector
 Yhdiste = mysql.connector.connect(
     host="localhost",
     port=3306,
-    database="insert your database here",# Why do I call it demo it is the real one?
+    database="flight_game"
+             "",# Why do I call it demo it is the real one?
     user="root",
-    password="Inesrt your password here",
+    password="Rehman087565426.",
     autocommit=True,
 )
 # Valitsee 15 satunaista lentokentää suomesta ja lajitelee ne aakkos-järjestyksessä
