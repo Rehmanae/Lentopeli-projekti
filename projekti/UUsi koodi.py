@@ -8,9 +8,15 @@ def appropiste1():
     2000-1000
 
 
-appropiste2 = matka
 
 appropiste1 = random.randint(1000,10000)
 
 
-appropiste2 = random.randint(10000,1000)
+appropiste2 = random.randint(1000,10000)
+
+print(appropiste1)
+print(appropiste2)
+
+appropiste1 = matka
+
+
