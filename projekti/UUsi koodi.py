@@ -4,8 +4,10 @@
 
 import random
 
-def appropiste1():
-    2000-1000
+def appropiste1(piste1, piste2):
+    if piste1 > piste2:
+        erotus = piste2 - piste1
+
 
 
 
