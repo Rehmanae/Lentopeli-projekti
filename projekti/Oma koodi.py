@@ -6,7 +6,7 @@
 # Tässä FUnktio lisää yhden haalarimerkkin määrän
 # Sen jälkeen lisää yhden haalrimerkkin ja näyttää uuden määrän
 def haalarimerkki(maara):
-    maara = maara +1
+    maara = maara + 1
     print("Haalarimerkki löydetty!")
     print("Sinulla on nyt", maara, "kpl")
     return maara
