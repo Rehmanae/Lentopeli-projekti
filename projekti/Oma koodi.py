@@ -1,6 +1,6 @@
-#Yees löysit Baarista haalarimerkki.
+#Löysit Baarista haalarimerkki.
 #Teen koodi, ilmoitusviesti esim kun pelaaja löytää haalarimerkkin
-#Niin hänelle tule ilmoitus siitä ja teen funktion joka pitää kirjaa montako haalarimerkkiä on löydetty.
+#Niin hänelle tule ilmoitus siitä ja teen funktion joka pitää kirjaa montako haalarimerkkiä on löydetty yhteensä.
 
 def haalarimerkki(maara):
     maara = maara +1
@@ -9,9 +9,10 @@ def haalarimerkki(maara):
     return maara
 
 #Kysytään käyttäjältä kuinka monta haalarimerkki on löydetty?
-def haalarimerkki_määrä():
-    maara = input("Kuinka paljon Haalarimerkki on löydetty?:")
-    return haalarimerkki
+maara = int(input("Montako haalarimerkkiä sinulla on?: "))
+
+maara = haalarimerkki(maara)
+
 
 
 
