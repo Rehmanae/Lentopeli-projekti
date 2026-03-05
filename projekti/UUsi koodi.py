@@ -18,10 +18,8 @@ appropiste2 = random.randint(1000,10000)
 print(appropiste1)
 print(appropiste2)
 
-matka = ("Erotus")
-appropiste1 = matka
-appropiste2 = matka
+matka = appropiste(appropiste1, appropiste2)
 
-Erotus = appropiste1 - appropiste2
+print("Erotus on", matka)
 
 
