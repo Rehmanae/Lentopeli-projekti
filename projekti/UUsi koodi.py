@@ -4,15 +4,14 @@
 
 import random
 
-def appropiste1(piste1, piste2):
+def appropiste(piste1, piste2):
     if piste1 > piste2:
         erotus = piste2 - piste1
-
-
-
+    else:
+        erotus = piste2 - piste1
+    return erotus
 
 appropiste1 = random.randint(1000,10000)
-
 
 appropiste2 = random.randint(1000,10000)
 
