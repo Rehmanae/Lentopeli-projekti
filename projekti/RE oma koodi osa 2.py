@@ -43,6 +43,11 @@ else:
     print("Mene hakee lisää haalarimerkkiä!")
 
 
+
+
 # Kuinka paljon alkoholi kuluu per metri, Alkoholi 1 Litra per Kilometri
 
 
+kulutus = 1
+
+if kulutus == appropiste:
