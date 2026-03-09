@@ -48,6 +48,8 @@ else:
 # Kuinka paljon alkoholi kuluu per metri, Alkoholi 1 Litra per Kilometri
 
 
-kulutus = 1
+kulutus = 1000
 
+appropiste = 
 if kulutus == appropiste:
+
