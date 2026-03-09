@@ -31,6 +31,7 @@ print("Erotus on", matka)
 
 
 
+
 # Teen koodi, kun sulla on 10 haalrimerrki, antaa erikois haalarinmerkkin
 # Esim print sulla on 10/10 tässä sulle erikoismerkki
 
@@ -41,5 +42,7 @@ if haalarimerkki >= 10:
 else:
     print("Mene hakee lisää haalarimerkkiä!")
 
+
+# Kuinka paljon alkoholi kuluu per metri, Alkoholi 1 Litra per Kilometri
 
 
