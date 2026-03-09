@@ -20,12 +20,14 @@ appropiste1 = random.randint(1000,10000)
 #Arvotaan toka piste väliltä 1000-1000
 appropiste2 = random.randint(1000,10000)
 
-
+#Tulostetaan pisteet
 print(appropiste1)
 print(appropiste2)
 
+# Kutsutaan funktiota ja tallenetaan tulosta muuttujaan, joka on matka.
 matka = appropiste(appropiste1, appropiste2)
 
+#Tulostetaan pisteiden  välinen etäisyys
 print("Erotus on", matka)
 
 
