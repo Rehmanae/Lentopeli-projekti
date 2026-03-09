@@ -51,11 +51,13 @@ kulutus = 1000
 
 #Funktio laskee alkoholin kulutuksen
 def kulutus(matka):
+    litrat = matka/ 1000
+    return litrat
 
-    return
 tulos = kulutus(matka)
 
-print("Alkoholia kuluu", tulos, "litraa")
+
+print("Alkoholia kuluu", tulos,"litraa")
 
 
 
