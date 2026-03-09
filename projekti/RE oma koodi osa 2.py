@@ -54,7 +54,10 @@ appropiste =
 
 kulutus - appropiste
 
-def kulutus():
+def kulutus(matka):
+    litra = matka / kulutus
+    return litra
+tulos = kulutus(matka)
 
 
 
