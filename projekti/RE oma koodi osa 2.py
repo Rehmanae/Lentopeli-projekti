@@ -50,6 +50,11 @@ else:
 
 kulutus = 1000
 
-appropiste = 
-if kulutus == appropiste:
+appropiste =
+
+kulutus - appropiste
+
+def kulutus():
+
+
 
