@@ -40,24 +40,22 @@ haalarimerkki = int(input("Kuinka monta haalarimerkki on?:"))
 if haalarimerkki >= 10:
     print("Sinulla on 10/10 haalarimerkkiä, tässä sulle uusi erikoihaalarimerkki!")
 else:
-    print("Mene hakee lisää haalarimerkkiä!")
+    print("Me hakee lisää haalarimerkkiä!")
 
 
 
 
 # Kuinka paljon alkoholi kuluu per metri, Alkoholi 1 Litra per Kilometri
 
-
 kulutus = 1000
 
-appropiste =
-
-kulutus - appropiste
-
+#Funktio laskee alkoholin kulutuksen
 def kulutus(matka):
-    litra = matka / kulutus
-    return litra
+
+    return
 tulos = kulutus(matka)
+
+print("Alkoholia kuluu", tulos, "litraa")
 
 
 
