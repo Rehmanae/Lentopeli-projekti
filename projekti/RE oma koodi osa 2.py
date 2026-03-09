@@ -30,3 +30,13 @@ matka = appropiste(appropiste1, appropiste2)
 print("Erotus on", matka)
 
 
+
+# Teen koodi, kun sulla on 10 haalrimerrki, antaa erikois haalarinmerkkin
+# Esim print sulla on 10/10 tässä sulle erikoismerkki
+
+input("Kuinka monta haalarimerkki on?")
+def haalarimerkki():
+    if haalarimerkki >= 10:
+        print("Sinulla on 10/10 haalarimerkkiä, tässä sulle uusi erikoihaalarimerkki!")
+
+haalarimerkki()
