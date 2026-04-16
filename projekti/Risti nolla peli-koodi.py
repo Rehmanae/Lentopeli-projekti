@@ -1,3 +1,3 @@
 """
-Teen minipelin, joka on ristinolla.
+Teen minipelin, joka on ristinolla. Sinun pitää voittaa niin saat haalarimerkkin.
 """
