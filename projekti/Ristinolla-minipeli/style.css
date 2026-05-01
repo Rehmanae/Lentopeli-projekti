@@ -24,3 +24,10 @@ nav h2 {
 .gameContainer h1 {
     font-size: 48px;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    width: 300px;
+    margin: auto;
+}
