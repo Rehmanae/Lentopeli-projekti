@@ -25,6 +25,7 @@ nav h2 {
     font-size: 48px;
 }
 
+/* TÄmän avulla pelilauta näyttää paremmalta*/
 .container {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -34,6 +35,7 @@ nav h2 {
     background-color: white;
 }
 
+/*Ruudut ovat siistimmät*/
 .box {
     border: 2px solid black;
     width: 100px;
@@ -45,6 +47,7 @@ nav h2 {
     cursor: pointer;
 }
 
+/* Tämä on ristinolla pelin voittoviiva*/
 .line {
     height: 3px;
     background-color: red;
@@ -52,8 +55,14 @@ nav h2 {
     position: absolute;
 }
 
+/* Yksi ruutu*/
 .box {
     border: 2px solid black;
     width: 100px;
     height: 100px;
+}
+
+/*Väri vaihtuu kun menee hiirellä ruudun sisälle*/
+.box:hover {
+    background-color: #f0f0f0;
 }
