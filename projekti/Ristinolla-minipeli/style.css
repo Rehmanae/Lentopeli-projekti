@@ -15,3 +15,12 @@ nav h2 {
     margin: 0;
     font-size: 32px;
 }
+
+.gameContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gameContainer h1 {
+    font-size: 48px;
+}
