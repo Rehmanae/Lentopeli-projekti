@@ -31,3 +31,16 @@ nav h2 {
     width: 300px;
     margin: auto;
 }
+
+.line {
+    height: 3px;
+    background-color: red;
+    width: 0;
+    position: absolute;
+}
+
+.box {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
