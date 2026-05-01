@@ -18,3 +18,12 @@ let voittorivit = [
     [0, 4, 8],
     [2, 4, 6]
 ]
+
+// Tällä katsotaan tuliko voitto tai tasapeli.
+function tarkistaVoitto() {
+    let ruudut = document.getElementsByClassName("boxtext")
+
+    for (let i = 0; i < voittorivit.length; i++) {
+        let a = voittorivit[i][0]
+        let b = voittorivit[i][1]
+        let c = voittorivit[i][2]
