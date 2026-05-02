@@ -126,3 +126,12 @@ function botinVuoro() {
 // tähän otetaan kaikki ruudut
 let boxit = document.getElementsByClassName("box")
 
+// Tästä pelaaja painaa ruutua.
+Array.from(boxit).forEach(box => {
+    let teksti = box.querySelector(".boxtext")
+
+    box.addEventListener("click", () => {
+        if (teksti.innerText == "" && !peliOhi && pelaaja == "X") {
+            teksti.innerText = "X"
+            aani.play()
+            tarkistaVoitto()
