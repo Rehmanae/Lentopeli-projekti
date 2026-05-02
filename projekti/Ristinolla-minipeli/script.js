@@ -144,3 +144,15 @@ Array.from(boxit).forEach(box => {
         }
     })
 })
+
+// Tästä pelin saa alusta.
+document.getElementById("reset").addEventListener("click", () => {
+    document.querySelectorAll(".boxtext").forEach(ruutu => {
+        ruutu.innerText = ""
+    })
+
+    pelaaja = "X"
+    peliOhi = false
+    document.querySelector(".info").innerText = "Sinun vuoro: X"
+    document.querySelector(".imgbox img").style.width = "0px"
+})
