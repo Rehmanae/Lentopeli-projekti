@@ -9,6 +9,7 @@ let voittoAani = new Audio("gameover.mp3")
 let taustaMusiikki = new Audio("music.mp3")
 taustaMusiikki.loop = true
 taustaMusiikki.volume = 0.2
+let musiikkiAlkanut = false
 
 // Näistä riveistä voi tulla voitto.
 let voittorivit = [
@@ -135,6 +136,11 @@ Array.from(boxit).forEach(box => {
 
     box.addEventListener("click", () => {
         if (teksti.innerText == "" && !peliOhi && pelaaja == "X") {
+            if (!musiikkiAlkanut) {
+                taustaMusiikki.play()
+                musiikkiAlkanut = true
+            }
+
             teksti.innerText = "X"
             aani.play()
             tarkistaVoitto()
