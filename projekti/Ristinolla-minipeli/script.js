@@ -123,4 +123,6 @@ function botinVuoro() {
     }
 }
 
+// tähän otetaan kaikki ruudut
+let boxit = document.getElementsByClassName("box")
 
