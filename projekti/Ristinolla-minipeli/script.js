@@ -39,13 +39,15 @@ function tarkistaVoitto() {
         ) {
             if (ruudut[a].innerText == "X") {
                 document.querySelector(".info").innerText = "Sinä voitit!"
+                document.querySelector(".imgbox img").src = "win.gif"
             } else {
                 document.querySelector(".info").innerText = "Botti voitti!"
+                document.querySelector(".imgbox img").src = "lose.gif"
             }
 
             peliOhi = true
             voittoAani.play()
-            document.querySelector(".imgbox img").style.width = "500px"
+            document.querySelector(".imgbox img").style.width = "350px"
             return
         }
     }
@@ -164,4 +166,5 @@ document.getElementById("reset").addEventListener("click", () => {
     peliOhi = false
     document.querySelector(".info").innerText = "Sinun vuoro: X"
     document.querySelector(".imgbox img").style.width = "0px"
+    document.querySelector(".imgbox img").src = ""
 })
