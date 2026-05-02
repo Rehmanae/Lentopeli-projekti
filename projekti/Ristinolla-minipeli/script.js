@@ -27,3 +27,21 @@ function tarkistaVoitto() {
         let a = voittorivit[i][0]
         let b = voittorivit[i][1]
         let c = voittorivit[i][2]
+
+        if (
+            ruudut[a].innerText != "" &&
+            ruudut[a].innerText == ruudut[b].innerText &&
+            ruudut[b].innerText == ruudut[c].innerText
+        ) {
+            if (ruudut[a].innerText == "X") {
+                document.querySelector(".info").innerText = "Sinä voitit!"
+            } else {
+                document.querySelector(".info").innerText = "Botti voitti!"
+            }
+
+            peliOhi = true
+            voittoAani.play()
+            document.querySelector(".imgbox img").style.width = "150px"
+            return
+        }
+    }
