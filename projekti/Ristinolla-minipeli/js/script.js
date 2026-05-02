@@ -184,4 +184,5 @@ document.getElementById("reset").addEventListener("click", () => {
     document.querySelector(".info").innerText = "Sinun vuoro: X"
     document.querySelector(".imgbox img").style.width = "0px"
     document.querySelector(".imgbox img").src = ""
+    document.querySelector(".line").style.width = "0px"
 })
