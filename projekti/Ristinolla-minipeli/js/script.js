@@ -4,7 +4,7 @@ console.log("Ristinolla peli käynnistyi")
 let pelaaja = "X"
 let peliOhi = false
 
-let aani = new Audio("sounds/music.mp3")
+let aani = new Audio("sounds/ting.mp3")
 let voittoAani = new Audio("sounds/gameover.mp3")
 let taustaMusiikki = new Audio("sounds/music.mp3")
 taustaMusiikki.loop = true
@@ -27,6 +27,8 @@ let voittorivit = [
 function tarkistaVoitto() {
     let ruudut = document.getElementsByClassName("boxtext")
 
+    // Lisätään voittoviiva
+    let line = document.querySelector(".line")
     for (let i = 0; i < voittorivit.length; i++) {
         let a = voittorivit[i][0]
         let b = voittorivit[i][1]
@@ -48,6 +50,21 @@ function tarkistaVoitto() {
             peliOhi = true
             voittoAani.play()
             document.querySelector(".imgbox img").style.width = "350px"
+
+            if (a == 0 && b == 1 && c == 2) {
+                line.style.width = "300px"
+                line.style.top = "50px"
+            }
+
+            if (a == 3 && b == 4 && c == 5) {
+                line.style.width = "300px"
+                line.style.top = "150px"
+            }
+
+            if (a == 6 && b == 7 && c == 8) {
+                line.style.width = "300px"
+                line.style.top = "250px"
+            }
             return
         }
     }
