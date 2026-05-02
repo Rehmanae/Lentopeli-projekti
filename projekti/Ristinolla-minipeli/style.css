@@ -9,15 +9,15 @@ body {
 }
 
 nav {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    background-color: rgba(170, 160, 220, 0.75);
     padding: 20px;
+    text-align: center;
 }
 
 nav h2 {
     margin: 0;
     font-size: 32px;
+    color: white;
 }
 
 .gameContainer {
@@ -27,8 +27,13 @@ nav h2 {
 
 .gameContainer h1 {
     font-size: 48px;
+    font-weight: 540;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
 }
-
 /* TÄmän avulla pelilauta näyttää paremmalta*/
 .container {
     display: grid;
@@ -49,6 +54,7 @@ nav h2 {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
 }
 
 /* Tämä on ristinolla pelin voittoviiva*/
@@ -68,7 +74,7 @@ nav h2 {
 
 /*Väri vaihtuu kun menee hiirellä ruudun sisälle*/
 .box:hover {
-    background-color: #f0f0f0;
+    background-color: lightcyan;
 }
 
 /* tämä on info alue */
