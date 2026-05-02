@@ -65,13 +65,6 @@ nav h2 {
     position: absolute;
 }
 
-/* Yksi ruutu*/
-.box {
-    border: 2px solid black;
-    width: 100px;
-    height: 100px;
-}
-
 /*Väri vaihtuu kun menee hiirellä ruudun sisälle*/
 .box:hover {
     background-color: lightcyan;

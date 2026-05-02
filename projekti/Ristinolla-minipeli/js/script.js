@@ -4,9 +4,9 @@ console.log("Ristinolla peli käynnistyi")
 let pelaaja = "X"
 let peliOhi = false
 
-let aani = new Audio("ting.mp3")
-let voittoAani = new Audio("gameover.mp3")
-let taustaMusiikki = new Audio("music.mp3")
+let aani = new Audio("sounds/music.mp3")
+let voittoAani = new Audio("sounds/gameover.mp3")
+let taustaMusiikki = new Audio("sounds/music.mp3")
 taustaMusiikki.loop = true
 taustaMusiikki.volume = 1
 let musiikkiAlkanut = false
@@ -39,10 +39,10 @@ function tarkistaVoitto() {
         ) {
             if (ruudut[a].innerText == "X") {
                 document.querySelector(".info").innerText = "Sinä voitit!"
-                document.querySelector(".imgbox img").src = "win.gif"
+                document.querySelector(".imgbox img").src = "images/win.gif"
             } else {
                 document.querySelector(".info").innerText = "Botti voitti!"
-                document.querySelector(".imgbox img").src = "lose.gif"
+                document.querySelector(".imgbox img").src = "images/lose.gif"
             }
 
             peliOhi = true
