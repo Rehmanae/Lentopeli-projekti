@@ -45,3 +45,20 @@ function tarkistaVoitto() {
             return
         }
     }
+
+    // jos kaikki ruudut on täynnä tulee tasapeli
+    let tasapeli = true
+
+    for (let i = 0; i < ruudut.length; i++) {
+        if (ruudut[i].innerText == "") {
+            tasapeli = false
+        }
+    }
+
+    if (tasapeli) {
+        document.querySelector(".info").innerText = "Tasapeli!"
+        peliOhi = true
+    }
+}
+
+
