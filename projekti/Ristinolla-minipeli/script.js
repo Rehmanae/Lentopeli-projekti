@@ -6,6 +6,9 @@ let peliOhi = false
 
 let aani = new Audio("ting.mp3")
 let voittoAani = new Audio("gameover.mp3")
+let taustaMusiikki = new Audio("music.mp3")
+taustaMusiikki.loop = true
+taustaMusiikki.volume = 0.2
 
 // Näistä riveistä voi tulla voitto.
 let voittorivit = [
