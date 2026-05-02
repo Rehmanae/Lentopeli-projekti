@@ -27,7 +27,7 @@ nav h2 {
 
 .gameContainer h1 {
     font-size: 48px;
-    font-weight: 540;
+    font-weight: 500;
     margin-bottom: 25px;
     background-color: rgba(255, 255, 255, 0.3);
     display: inline-block;
@@ -109,16 +109,13 @@ button:hover {
 }
 
 /* kuva on alussa piilossa */
-.imgbox img {
-    width: 0;
-    transition: width 0.5s;
-    margin-left: 130px;
-    pointer-events: none;
-}
-
 .imgbox {
-    display: flex;
-    justify-content: 10;
     margin-top: -410px;
 }
 
+.imgbox img {
+    width: 0;
+    transition: width 0.5s;
+    margin-left: 800px;
+    pointer-events: none;
+}
