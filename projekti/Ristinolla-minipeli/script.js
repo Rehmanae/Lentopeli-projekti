@@ -86,6 +86,20 @@ function etsiPaikka(merkki) {
     return -1
 }
 
+// Nyt botti pelaa.
+function botinVuoro() {
+    let ruudut = document.getElementsByClassName("boxtext")
+
+    if (peliOhi || pelaaja != "O") {
+        return
+    }
+
+    let valinta = etsiPaikka("O")
+
+    if (valinta == -1) {
+        valinta = etsiPaikka("X")
+    }
+
 
 
 
