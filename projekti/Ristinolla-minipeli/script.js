@@ -70,3 +70,22 @@ function etsiPaikka(merkki) {
         let b = voittorivit[i][1]
         let c = voittorivit[i][2]
 
+        if (ruudut[a].innerText == merkki && ruudut[b].innerText == merkki && ruudut[c].innerText == "") {
+            return c
+        }
+
+        if (ruudut[a].innerText == merkki && ruudut[b].innerText == "" && ruudut[c].innerText == merkki) {
+            return b
+        }
+
+        if (ruudut[a].innerText == "" && ruudut[b].innerText == merkki && ruudut[c].innerText == merkki) {
+            return a
+        }
+    }
+
+    return -1
+}
+
+
+
+
