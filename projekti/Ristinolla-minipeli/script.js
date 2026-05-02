@@ -135,3 +135,12 @@ Array.from(boxit).forEach(box => {
             teksti.innerText = "X"
             aani.play()
             tarkistaVoitto()
+
+            if (!peliOhi) {
+                pelaaja = "O"
+                document.querySelector(".info").innerText = "Botti miettii hetken..."
+                setTimeout(botinVuoro, 500)
+            }
+        }
+    })
+})
