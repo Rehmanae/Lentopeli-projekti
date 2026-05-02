@@ -98,5 +98,12 @@ button:hover {
 .imgbox img {
     width: 0;
     transition: width 0.5s;
-    margin-top: 15px;
+    margin-top: -300px;
+    pointer-events: none;
+}
+
+.imgbox {
+    display: flex;
+    justify-content: 10;
+    margin-top: -210px;
 }

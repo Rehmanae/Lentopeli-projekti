@@ -45,7 +45,7 @@ function tarkistaVoitto() {
 
             peliOhi = true
             voittoAani.play()
-            document.querySelector(".imgbox img").style.width = "150px"
+            document.querySelector(".imgbox img").style.width = "500px"
             return
         }
     }
