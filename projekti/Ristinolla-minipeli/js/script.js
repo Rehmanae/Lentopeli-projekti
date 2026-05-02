@@ -8,7 +8,7 @@ let aani = new Audio("sounds/ting.mp3")
 let voittoAani = new Audio("sounds/gameover.mp3")
 let taustaMusiikki = new Audio("sounds/music.mp3")
 taustaMusiikki.loop = true
-taustaMusiikki.volume = 1
+taustaMusiikki.volume = 0.5
 let musiikkiAlkanut = false
 
 // Näistä riveistä voi tulla voitto.
