@@ -59,12 +59,14 @@ nav h2 {
 
 /* Tämä on ristinolla pelin voittoviiva*/
 .line {
-    height: 3px;
+    height: 4px;
     background-color: red;
     width: 0;
     position: absolute;
+    left: 0;
+    top: 50px;
+    transition: width 0.3s;
 }
-
 /*Väri vaihtuu kun menee hiirellä ruudun sisälle*/
 .box:hover {
     background-color: lightcyan;
