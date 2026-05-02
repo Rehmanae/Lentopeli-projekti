@@ -100,6 +100,27 @@ function botinVuoro() {
         valinta = etsiPaikka("X")
     }
 
+    if (valinta == -1 && ruudut[4].innerText == "") {
+        valinta = 4
+    }
 
+    if (valinta == -1) {
+        for (let i = 0; i < ruudut.length; i++) {
+            if (ruudut[i].innerText == "") {
+                valinta = i
+                break
+            }
+        }
+    }
+
+    ruudut[valinta].innerText = "O"
+    aani.play()
+    tarkistaVoitto()
+
+    if (!peliOhi) {
+        pelaaja = "X"
+        document.querySelector(".info").innerText = "Sinun vuoro: X"
+    }
+}
 
 
