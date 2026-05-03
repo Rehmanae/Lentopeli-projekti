@@ -27,7 +27,16 @@
         <!-- Tulos tulee tähän -->
         <h2 id="tulos">Tulos: -</h2>
 
-        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <!-- Tämä on oma popup-laatikko tulokselle. -->
+    <div id="popup">
+        <div id="popupBox">
+            <div id="popupHeader">Tulos</div>
+            <div id="popupResult">-</div>
+            <button onclick="suljePopup()">Sulje</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 
