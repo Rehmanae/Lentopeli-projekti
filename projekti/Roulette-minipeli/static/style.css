@@ -34,29 +34,34 @@ h1 {
 
 .teksti {
     position: absolute;
-    font-size: 19px;
+    width: 100px;
+    text-align: center;
     font-weight: bold;
     color: white;
 }
 
 .yksi {
-    top: 65px;
-    left: 120px;
+    top: 80px;
+    left: 165px;
+    transform: rotate(45deg);
 }
 
 .kaksi {
-    top: 135px;
-    right: 30px;
+    top: 210px;
+    left: 170px;
+    transform: rotate(135deg);
 }
 
 .kolme {
-    bottom: 65px;
-    left: 95px;
+    bottom: 90px;
+    left: 40px;
+    transform: rotate(315deg);
 }
 
 .nelja {
-    top: 135px;
+    top: 75px;
     left: 35px;
+    transform: rotate(315deg);
 }
 
 button {
