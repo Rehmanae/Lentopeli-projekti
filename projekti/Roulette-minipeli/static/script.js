@@ -1,6 +1,10 @@
 let wheel = document.getElementById("wheel");
 let tulos = document.getElementById("tulos");
 
+let popup = document.getElementById("popup");
+let popupHeader = document.getElementById("popupHeader");
+let popupResult = document.getElementById("popupResult");
+
 let vaihtoehdot = ["Voitit", "Hävisit", "Uudestaan", "Merkki"];
 
 let pyorii = false;
@@ -24,11 +28,11 @@ function pyorita() {
         tulos.innerHTML = "Tulos: " + valittuTulos;
 
         if (valittuTulos == "Voitit") {
-            alert("Voitit pelin!");
-        }
-
-        if (valittuTulos == "Hävisit") {
-            alert("Hävisit pelin!");
+            naytaPopup("Meillä on voittaja!", valittuTulos);
+        } else if (valittuTulos == "Hävisit") {
+            naytaPopup("Tällä kertaa hävisit", valittuTulos);
+        } else {
+            naytaPopup("Tulos", valittuTulos);
         }
 
         pyorii = false;
