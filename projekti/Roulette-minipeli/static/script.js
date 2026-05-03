@@ -12,4 +12,12 @@ function pyorita() {
     }
 
     pyorii = true;
+    let arvottuNumero = Math.floor(Math.random() * vaihtoehdot.length);
+    let valittuTulos = vaihtoehdot[arvottuNumero];
+
+    // Lisätään monta kierrosta, että pyörä näyttää oikeasti pyörivän.
+    asteet = asteet + 1440 + arvottuNumero * 90;
+
+    wheel.style.transform = "rotate(" + asteet + "deg)";
+
 }
