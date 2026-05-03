@@ -40,3 +40,15 @@ function pyorita() {
     }, 3000);
 
 }
+
+/* Tämä avaa popup-laatikon. */
+function naytaPopup(otsikko, teksti) {
+    popupHeader.innerHTML = otsikko;
+    popupResult.innerHTML = teksti;
+    popup.style.display = "block";
+}
+
+/* Tämä sulkee popup-laatikon. */
+function suljePopup() {
+    popup.style.display = "none";
+}
