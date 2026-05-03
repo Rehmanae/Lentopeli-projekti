@@ -20,4 +20,14 @@ h1 {
     border: 5px solid black;
     border-radius: 50%;
     position: relative;
+
+    background: conic-gradient(
+    green 0deg 90deg,
+    red 90deg 180deg,
+    blue 180deg 270deg,
+    orange 270deg 360deg
+);
+
+
+    transition: transform 3s;
 }
