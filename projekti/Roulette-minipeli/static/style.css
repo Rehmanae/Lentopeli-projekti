@@ -31,3 +31,10 @@ h1 {
 
     transition: transform 3s;
 }
+
+.teksti {
+    position: absolute;
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+}
