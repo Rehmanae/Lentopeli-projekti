@@ -20,4 +20,19 @@ function pyorita() {
 
     wheel.style.transform = "rotate(" + asteet + "deg)";
 
+    setTimeout(function () {
+        tulos.innerHTML = "Tulos: " + valittuTulos;
+
+        if (valittuTulos == "Voitit") {
+            alert("Voitit pelin!");
+        }
+
+        if (valittuTulos == "Hävisit") {
+            alert("Hävisit pelin!");
+        }
+
+        pyorii = false;
+
+    }, 3000);
+
 }
