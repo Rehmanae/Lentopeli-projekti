@@ -41,27 +41,27 @@ h1 {
 }
 
 .yksi {
-    top: 80px;
-    left: 165px;
-    transform: rotate(45deg);
+    top: 45px;
+    left: 100px;
+    transform: rotate(0deg);
 }
 
 .kaksi {
-    top: 210px;
-    left: 170px;
-    transform: rotate(135deg);
+    top: 120px;
+    left: 185px;
+    transform: rotate(90deg);
 }
 
 .kolme {
-    bottom: 90px;
-    left: 40px;
-    transform: rotate(315deg);
+    bottom: 120px;
+    left: 15px;
+    transform: rotate(0deg);
 }
 
 .nelja {
-    top: 75px;
-    left: 35px;
-    transform: rotate(315deg);
+    top: 120px;
+    left: 15px;
+    transform: rotate(270deg);
 }
 
 button {
