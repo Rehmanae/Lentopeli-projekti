@@ -6,8 +6,7 @@ let popupHeader = document.getElementById("popupHeader");
 let popupResult = document.getElementById("popupResult");
 let popupKuva = document.getElementById("popupKuva");
 
-let vaihtoehdot = ["merkki1", "Ei mitään", "merkki2", "Uudestaan"];
-
+let vaihtoehdot = ["merkki2", "merkki1", "Ei mitään", "Uudestaan"];
 let pyorii = false;
 let asteet = 0;
 
@@ -20,10 +19,8 @@ function pyorita() {
     let arvottuNumero = Math.floor(Math.random() * vaihtoehdot.length);
     let valittuTulos = vaihtoehdot[arvottuNumero];
 
-    // Lisätään monta kierrosta, että pyörä näyttää oikeasti pyörivän.
-    let pieniSatunnainenKulma = Math.floor(Math.random() * 40) + 25;
 
-    asteet = asteet + 1440 + arvottuNumero * 90 + 45;
+    asteet = asteet + 1440 - arvottuNumero * 90 - 45;
 
     wheel.style.transform = "rotate(" + asteet + "deg)";
 
