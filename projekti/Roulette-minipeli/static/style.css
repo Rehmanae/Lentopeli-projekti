@@ -46,43 +46,43 @@ h1 {
 }
 
 .yksi {
-    top: 62px;
-    left: 178px;
+    top: 25px;
+    left: 135px;
 }
 
 .kaksi {
-    top: 185px;
-    left: 178px;
+    top: 105px;
+    left: 190px;
 }
 
 .kolme {
-    top: 185px;
-    left: 27px;
+    top: 155px;
+    left: 190px;
 }
 
 .nelja {
-    top: 62px;
-    left: 27px;
+    top: 165px;
+    left: 20px;
 }
 
 .viisi {
-    top: 135px;
-    left: 15px;
+    top: 240px;
+    left: 50px;
 }
 
 .kuusi {
-    top: 215px;
-    left: 65px;
+    top: 240px;
+    left: 140px;
 }
 
 .seitseman {
-    top: 215px;
-    left: 160px;
+    top: 100px;
+    left: 1px;
 }
 
 .kahdeksan {
-    top: 135px;
-    left: 200px;
+    top: 30px;
+    left: 50px;
 }
 
 button {
