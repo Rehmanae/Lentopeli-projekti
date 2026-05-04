@@ -6,7 +6,8 @@ let popupHeader = document.getElementById("popupHeader");
 let popupResult = document.getElementById("popupResult");
 let popupKuva = document.getElementById("popupKuva");
 
-let vaihtoehdot = ["Merkki1", "Uudestaan", "Ei mitään", "Merkki2"];
+let vaihtoehdot = ["merkki1", "Ei mitään", "merkki2", "Uudestaan"];
+
 let pyorii = false;
 let asteet = 0;
 
@@ -22,21 +23,21 @@ function pyorita() {
     // Lisätään monta kierrosta, että pyörä näyttää oikeasti pyörivän.
     let pieniSatunnainenKulma = Math.floor(Math.random() * 40) + 25;
 
-    asteet = asteet + 1440 + arvottuNumero * 90 + pieniSatunnainenKulma;
+    asteet = asteet + 1440 + arvottuNumero * 90 + 45;
 
     wheel.style.transform = "rotate(" + asteet + "deg)";
 
     setTimeout(function () {
         tulos.innerHTML = "Tulos: " + valittuTulos;
 
-        if (valittuTulos == "Merkki1") {
+        if (valittuTulos == "merkki1") {
             naytaPopup("Voitit haalarimerkin!", "Haalarimerkki", "merkki1.png");
-        } else if (valittuTulos == "Merkki2") {
-            naytaPopup("Voitit Erikois haalarimerkin!", "2X Haalarimerkki", "merkki2.png");
+        } else if (valittuTulos == "merkki2") {
+            naytaPopup("Voitit erikois haalarimerkin!", "2X Haalarimerkki", "merkki2.png");
+        } else if (valittuTulos == "Uudestaan") {
+            naytaPopup("Uudestaan", valittuTulos, "");
         } else if (valittuTulos == "Ei mitään") {
             naytaPopup("Ei mitään", valittuTulos, "");
-        } else {
-            naytaPopup("Pyöritä uudestaan", valittuTulos, "");
         }
         pyorii = false;
 

@@ -47,14 +47,14 @@ h1 {
 }
 
 .kaksi {
-    top: 120px;
-    left: 185px;
-    transform: rotate(90deg);
+    top: 200px;
+    left: 45px;
+    transform: rotate(180deg);
 }
 
 .kolme {
-    bottom: 120px;
-    left: 15px;
+    bottom: 45px;
+    left: 100px;
     transform: rotate(0deg);
 }
 
