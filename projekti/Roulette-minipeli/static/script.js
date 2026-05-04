@@ -40,7 +40,7 @@ function pyorita() {
 
         pyorii = false;
 
-    }, 3000);
+    }, 10000);
 
 }
 
@@ -57,4 +57,9 @@ function naytaPopup(otsikko, teksti, kuva) {
     }
 
     popup.style.display = "block";
+}
+
+function suljePopup() {
+    popup.style.display = "none";
+    popupKuva.style.display = "none";
 }
