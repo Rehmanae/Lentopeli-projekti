@@ -9,7 +9,12 @@ body {
 }
 
 h1 {
-    margin-top: 30px;
+    color: #222;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+p {
+    color: #333;
 }
 
 .nuoli {
@@ -31,7 +36,7 @@ h1 {
             blue 90deg 135deg,
             orange 135deg 180deg,
             purple 180deg 225deg,
-            yellow 90deg 120deg,
+            gold 225deg 270deg,
             pink 270deg 315deg,
             brown 315deg 360deg
 );
@@ -65,7 +70,7 @@ h1 {
 }
 
 .nelja {
-    top: 250px;
+    top: 240px;
     left: 30px;
 }
 
@@ -122,8 +127,8 @@ button {
 
 /* Tämä on popupin otsikko. */
 #popupHeader {
-    background-color: blue;
-    color: black;
+    background: linear-gradient(90deg, #c8b6ff, #a0c4ff);
+    color: white;
     font-size: 24px;
     font-weight: bold;
     padding: 15px;
@@ -152,4 +157,13 @@ button {
     display: block;
     margin: 0 auto 25px auto;
     border-radius: 50%;
+}
+
+.game-box {
+    background: rgba(255,255,255,0.85);
+    padding: 50px;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 50px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
