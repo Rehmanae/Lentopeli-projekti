@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #ddd;
+
+    background-image: url("/static/tausta.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -27,7 +31,7 @@ h1 {
             blue 90deg 135deg,
             orange 135deg 180deg,
             purple 180deg 225deg,
-            yellow 225deg 270deg,
+            yellow 90deg 120deg,
             pink 270deg 315deg,
             brown 315deg 360deg
 );
