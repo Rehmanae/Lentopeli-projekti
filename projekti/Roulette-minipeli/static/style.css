@@ -114,3 +114,9 @@ button {
 #popupBox button {
     margin-bottom: 20px;
 }
+
+.merkkiKuva {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}

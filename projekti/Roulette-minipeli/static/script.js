@@ -5,7 +5,7 @@ let popup = document.getElementById("popup");
 let popupHeader = document.getElementById("popupHeader");
 let popupResult = document.getElementById("popupResult");
 
-let vaihtoehdot = ["Voitit", "Hävisit", "Uudestaan", "Merkki"];
+let vaihtoehdot = ["Haalarimerkki", "Ei mitään", "Uudestaan", "Yritä uudestaan"];
 
 let pyorii = false;
 let asteet = 0;
@@ -27,12 +27,14 @@ function pyorita() {
     setTimeout(function () {
         tulos.innerHTML = "Tulos: " + valittuTulos;
 
-        if (valittuTulos == "Voitit") {
-            naytaPopup("Meillä on voittaja!", valittuTulos);
-        } else if (valittuTulos == "Hävisit") {
-            naytaPopup("Tällä kertaa hävisit", valittuTulos);
+        if (valittuTulos == "Haalarimerkki") {
+            naytaPopup("Voitit haalarimerkin!", valittuTulos, "merkki1.png");
+        } else if (valittuTulos == "Juomamerkki") {
+            naytaPopup("Voitit juomamerkin!", valittuTulos, "merkki2.png");
+        } else if (valittuTulos == "Ei mitään") {
+            naytaPopup("Ei voittoa tällä kertaa", valittuTulos, "");
         } else {
-            naytaPopup("Tulos", valittuTulos);
+            naytaPopup("Pyöritä uudestaan", valittuTulos, "");
         }
 
         pyorii = false;
