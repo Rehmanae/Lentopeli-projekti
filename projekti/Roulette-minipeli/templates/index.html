@@ -16,12 +16,18 @@
 
     <!-- Rulettipyörä ja vaihtoehdot -->
     <div id="wheel">
-        <div class="teksti yksi">Voitit</div>
-        <div class="teksti kaksi">Hävisit</div>
-        <div class="teksti kolme">Uudestaan</div>
-        <div class="teksti nelja">Merkki</div>
-    </div>
+        <div class="teksti yksi">
+            <img src="{{ url_for('static', filename='merkki1.png') }}" class="merkkiKuva">
+        </div>
 
+        <div class="teksti kaksi">😢 Ei mitään</div>
+
+        <div class="teksti kolme">🔁 Uudestaan</div>
+
+        <div class="teksti nelja">
+            <img src="{{ url_for('static', filename='merkki2.png') }}" class="merkkiKuva">
+        </div>
+    </div>
         <button onclick="pyorita()">Pyöritä</button>
 
         <!-- Tulos tulee tähän -->
