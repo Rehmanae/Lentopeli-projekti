@@ -6,7 +6,16 @@ let popupHeader = document.getElementById("popupHeader");
 let popupResult = document.getElementById("popupResult");
 let popupKuva = document.getElementById("popupKuva");
 
-let vaihtoehdot = ["merkki2", "merkki1", "Ei mitään", "Uudestaan"];
+let vaihtoehdot = [
+    "merkki1",
+    "Ei mitään",
+    "merkki2",
+    "Uudestaan",
+    "Kahvi",
+    "Karkki",
+    "Alennus",
+    "Hävisit"
+];
 let pyorii = false;
 let asteet = 0;
 
@@ -20,7 +29,8 @@ function pyorita() {
     let valittuTulos = vaihtoehdot[arvottuNumero];
 
 
-    asteet = asteet + 1440 - arvottuNumero * 90 - 45;
+    let sektorinKoko = 360 / vaihtoehdot.length;
+    asteet = asteet + 1440 + arvottuNumero * sektorinKoko + sektorinKoko / 2;
 
     wheel.style.transform = "rotate(" + asteet + "deg)";
 
