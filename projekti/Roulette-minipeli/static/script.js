@@ -45,6 +45,14 @@ function pyorita() {
             naytaPopup("Uudestaan", valittuTulos, "");
         } else if (valittuTulos == "Ei mitään") {
             naytaPopup("Ei mitään", valittuTulos, "");
+        } else if (valittuTulos == "Kahvi") {
+            naytaPopup("Voitit kahvin!", valittuTulos, "");
+        } else if (valittuTulos == "Karkki") {
+            naytaPopup("Voitit karkin!", valittuTulos, "");
+        } else if (valittuTulos == "Alennus") {
+            naytaPopup("Sait alennuksen!", valittuTulos, "");
+        } else if (valittuTulos == "Hävisit") {
+            naytaPopup("Hävisit tällä kertaa", valittuTulos, "");
         }
         pyorii = false;
 
