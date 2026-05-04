@@ -10,14 +10,16 @@ let vaihtoehdot = [
     "merkki1",
     "Ei mitään",
     "merkki2",
-    "Uudestaan",
-    "Kahvi",
     "Karkki",
+    "Kahvi",
+    "Uudestaan",
     "Alennus",
     "Hävisit"
 ];
+
 let pyorii = false;
 let asteet = 0;
+let spinCount = 0;
 
 function pyorita() {
     if (pyorii) {
@@ -25,12 +27,18 @@ function pyorita() {
     }
 
     pyorii = true;
+
     let arvottuNumero = Math.floor(Math.random() * vaihtoehdot.length);
     let valittuTulos = vaihtoehdot[arvottuNumero];
 
+    console.log("Numero:", arvottuNumero, "Tulos:", valittuTulos);
 
     let sektorinKoko = 360 / vaihtoehdot.length;
-    asteet = asteet + 1440 + arvottuNumero * sektorinKoko + sektorinKoko / 2;
+    let kohdeKulma = arvottuNumero * sektorinKoko + sektorinKoko / 2;
+
+    spinCount = spinCount + 1;
+
+    asteet = spinCount * 360 * 6 - kohdeKulma;
 
     wheel.style.transform = "rotate(" + asteet + "deg)";
 
