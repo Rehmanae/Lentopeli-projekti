@@ -4,6 +4,7 @@ let tulos = document.getElementById("tulos");
 let popup = document.getElementById("popup");
 let popupHeader = document.getElementById("popupHeader");
 let popupResult = document.getElementById("popupResult");
+let popupKuva = document.getElementById("popupKuva");
 
 let vaihtoehdot = ["Haalarimerkki", "Ei mitään", "Uudestaan", "Yritä uudestaan"];
 
@@ -44,13 +45,16 @@ function pyorita() {
 }
 
 /* Tämä avaa popup-laatikon. */
-function naytaPopup(otsikko, teksti) {
+function naytaPopup(otsikko, teksti, kuva) {
     popupHeader.innerHTML = otsikko;
     popupResult.innerHTML = teksti;
-    popup.style.display = "block";
-}
 
-/* Tämä sulkee popup-laatikon. */
-function suljePopup() {
-    popup.style.display = "none";
+    if (kuva != "") {
+        popupKuva.src = "/static/" + kuva;
+        popupKuva.style.display = "block";
+    } else {
+        popupKuva.style.display = "none";
+    }
+
+    popup.style.display = "block";
 }
