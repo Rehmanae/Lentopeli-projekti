@@ -22,10 +22,14 @@ h1 {
     position: relative;
 
     background: conic-gradient(
-    green 0deg 90deg,
-    red 90deg 180deg,
-    blue 180deg 270deg,
-    orange 270deg 360deg
+            green 0deg 45deg,
+            red 45deg 90deg,
+            blue 90deg 135deg,
+            orange 135deg 180deg,
+            purple 180deg 225deg,
+            yellow 225deg 270deg,
+            pink 270deg 315deg,
+            brown 315deg 360deg
 );
 
 
@@ -58,6 +62,26 @@ h1 {
 .nelja {
     top: 62px;
     left: 27px;
+}
+
+.viisi {
+    top: 135px;
+    left: 15px;
+}
+
+.kuusi {
+    top: 215px;
+    left: 65px;
+}
+
+.seitseman {
+    top: 215px;
+    left: 160px;
+}
+
+.kahdeksan {
+    top: 135px;
+    left: 200px;
 }
 
 button {
