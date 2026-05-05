@@ -159,11 +159,3 @@ button {
     border-radius: 50%;
 }
 
-.game-box {
-    background: rgba(255,255,255,0.85);
-    padding: 50px;
-    border-radius: 20px;
-    width: fit-content;
-    margin: 50px auto;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
